@@ -1,9 +1,12 @@
-function form5() {
-var age = document.getElementById('age').value;
-if (age >= 18) {
-  alert("Vous êtes majeur !")
-}
-else {
-  alert("Vous êtes mineur !")
-}
-}
+function afficher(){
+    var age = document.getElementById('age').value;
+    if (isNaN(age) == false && age > 0){
+      if (age < 18){
+        alert('Vous êtes mineur');
+      } else{
+        alert('Vous êtes majeur');
+      }
+    } else {
+      alert('Rentrer un âge valide');
+    }
+  }
